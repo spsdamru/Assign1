@@ -1,0 +1,48 @@
+main {
+    background-image: none;
+}
+
+.place-info {
+    text-align: center;
+    padding: 40px;
+    background-color: rgb(204, 238, 238);
+}
+
+.place-info h1 {
+    font-size: 4rem;
+    color: purple;
+    margin-bottom: 20px;
+}
+
+.place-info img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.place-info p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+@media (max-width: 770px) {
+    .place-info h1 {
+        font-size: 2rem;
+    }
+    
+    .place-info p {
+        font-size: 1rem;
+    }
+}
+
+nav, footer {
+    background-color: #8ac6c6;
+}
+
+.icons {
+    justify-content: center;
+}
+
+/* I used chatGPT to generate descriptions for the places */
