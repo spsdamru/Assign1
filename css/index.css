@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    font-family: 'Kanit', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    background-image: url(../images/florence.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
+h1 {
+    padding: 10px;
+    font-size: 5rem;
+}
+
+h2 {
+    padding: 10px;
+    font-size: 2.5rem;
+    font-weight: 400;
+}
+
+h3 {
+    font-weight: 400;
+}
+
+p {
+    font-weight: 200;
+}
+
+/* points for creativity? haha */
+#dreams {
+    display: inline;
+    font-weight: bold;
+    background: linear-gradient(90deg, #FF6B6B , #FAD02E , #56CCF2 , #9B51E0);
+    background-size: 300%;
+    background-clip: text;
+    color: transparent;
+    animation: gradientAnimation 5s ease infinite;
+  }
+  
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+#dreams:hover {
+    animation: gradientAnimation 1s ease infinite;
+}
+
+nav {
+    display: flex;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    padding: 40px;
+    font-size: 20px;
+}
+
+nav ul li a:hover {
+    color: #5e1bd3;
+}
+
+a {
+    text-decoration: none;
+    color: #51279B;
+    cursor: pointer;
+}
+
+#logo {
+    margin: -40px;
+    height: 100px;
+}
+
+.title {
+    margin: 200px 140px;
+    color: white;
+}
+
+button {
+    background-color: #51279B;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #8662C7;
+}
+
+section {
+    background-color: rgb(232, 240, 239);
+}
+
+section ul {
+    padding: 20px;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+section ul li {
+    padding-bottom: 10px;
+    background-color: white;
+}
+
+section ul li img {
+    height: 400px;
+}
+
+.cards {
+    display: flex;
+}
+
+.cards li {
+    max-width: 533.307px;
+}
+
+.icons {
+    display: flex;
+}
+
+.icons img {
+    height: 20px;
+    padding: 2.5px;
+}
+
+.icons p {
+    display: inline;
+    padding: 2.5px;
+}
+
+footer {
+    background-color: rgb(204, 238, 238);
+    padding: 50px;
+}
+
+footer ul {
+    list-style: none;
+    padding: 10px;
+}
+
+/* xlarge devices */
+@media (max-width: 1660px) {
+    section ul li img {
+        height: 350px;
+    }
+}
+
+/* large devices */
+@media (max-width: 1460px) {
+    section ul li img {
+        height: 300px;
+    }
+}
+
+/* medium devices */
+@media (max-width: 1260px) {
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    section ul li img {
+        height: 400px;
+    }
+}
+
+/* small devices */
+@media (max-width: 770px) {
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+}
