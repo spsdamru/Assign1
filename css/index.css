@@ -125,6 +125,10 @@ section ul li {
     padding-bottom: 10px;
     background-color: white;
 }
+section ul li a {
+    text-decoration: none;
+    color: black;
+}
 
 section ul li img {
     height: 400px;
